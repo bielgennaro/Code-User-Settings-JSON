@@ -1,14 +1,24 @@
+/* When you open the settings, you can see the settings.json file; 
+  Make a good use of the comments to understand what each line does;
+  You can also use the search bar to find a specific setting;
+  You can also use the settings.json file to add your own settings;
+  Major settings made with ❤️ by @gabriel
+*/
 {
-  "workbench.preferredDarkColorTheme": "Vitesse Dark",
-  "workbench.preferredLightColorTheme": "Vitesse Light",
-  "workbench.iconTheme": "symbols",
-  "workbench.fontAliasing": "antialiased",
-  "editor.fontFamily": "InputMono, Fira Code, monospace",
-  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
-  "editor.fontWeight": "400",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Catppuccin Frappé",
+  "workbench.iconTheme": "material-icon-theme",
   // Editor
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.minimap.enabled": false, // This line controls the minimap (the little map on the right side of the editor)
+  "editor.fontLigatures": "true",
+  "editor.fontSize": 16,
+  "editor.autoIndent": "full",
+  "editor.cursorBlinking": "smooth", // this is great!
+  "editor.smoothScrolling": true,
+  "editor.autoClosingQuotes": "always",
   "editor.accessibilitySupport": "off",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.find.addExtraSpaceOnTop": false,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
@@ -27,7 +37,6 @@
   "explorer.confirmDragAndDrop": false,
   "window.autoDetectColorScheme": true,
   "window.dialogStyle": "custom",
-  "window.nativeTabs": true, // this is great, macOS only
   "window.titleBarStyle": "custom",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
@@ -49,7 +58,9 @@
   "git.untrackedChanges": "separate",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.fontFamily": "Hack NF",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "bold",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
   "scm.diffDecorationsGutterWidth": 2,
@@ -107,9 +118,9 @@
     "yaml": false,
     "plaintext": false,
     "markdown": false,
-    "csharp": false,
+    "csharp": true,
     "javascript": false,
-    "typescript": false
+    "typescript": true
   },
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
@@ -162,6 +173,7 @@
       "stash": true
     }
   },
+  // For this point below, I don't know what they do, but I'm sure they're important :D
   "i18n-ally.autoDetection": false,
   "i18n-ally.displayLanguage": "en",
   "i18n-ally.ignoredLocales": [],
@@ -249,10 +261,10 @@
   "workbench.editor.titleScrollbarSizing": "large",
   "workbench.productIconTheme": "fluent-icons",
   // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-  "editor.lineHeight": 24,
+  "editor.lineHeight": 25,
   // Controls if file decorations should use badges.
   "explorer.decorations.badges": false,
-  "workbench.colorTheme": "Rosé Pine",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -273,24 +285,19 @@
         }
       },
       {
-        "scope": [
-          //following will be excluded from italics (VSCode has some defaults for italics)
-          "invalid",
-          "keyword.operator",
-          "constant.numeric.css",
-          "keyword.other.unit.px.css",
-          "constant.numeric.decimal.js",
-          "constant.numeric.json"
-        ],
         "settings": {
           "fontStyle": ""
         }
       }
     ]
   },
+  // Prisma configs, if you don't use prisma, you can remove this
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma",
     "editor.formatOnSave": true
   },
-  "workbench.startupEditor": "none",
+  // Catppuccin configs, if you don't use catppuccin, you can remove this (try catppuccin, it's an awesome theme)
+  "catppuccin.accentColor": "red",
+  "catppuccin.bracketMode": "rainbow",
+  "catppuccin.workbenchMode": "default"
 }
