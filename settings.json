@@ -5,14 +5,16 @@
   Major settings made with ❤️ by @gabriel
 */
 {
-  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-  "workbench.preferredLightColorTheme": "Catppuccin Frappé",
+  "vscode-pets.petSize": "large",
+  "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "material-icon-theme",
   // Editor
   "editor.fontFamily": "JetBrains Mono",
-  "editor.minimap.enabled": false, // This line controls the minimap (the little map on the right side of the editor)
+  "editor.minimap.enabled": true, // This line controls the minimap (the little map on the right side of the editor)
   "editor.fontLigatures": "true",
-  "editor.fontSize": 16,
+  "editor.fontWeight": "600",
+  "editor.fontSize": 18,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.autoIndent": "full",
   "editor.cursorBlinking": "smooth", // this is great!
   "editor.smoothScrolling": true,
@@ -59,8 +61,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontFamily": "Hack NF",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontSize": 15.5,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
   "scm.diffDecorationsGutterWidth": 2,
@@ -87,40 +88,23 @@
   // Extension configs
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "error"
-  ],
-  "errorLens.excludeBySource": [
-    "cSpell",
-    "Grammarly",
-    "eslint"
-  ],
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint"],
   // ESLint config: https://github.com/antfu/eslint-config
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
   "eslint.quiet": true,
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact",
-    "vue",
-    "html",
-    "markdown",
-    "json",
-    "jsonc",
-    "json5"
-  ],
+  "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact", "vue", "html", "markdown", "json", "jsonc", "json5"],
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
     "plaintext": false,
     "markdown": false,
     "csharp": true,
-    "javascript": false,
-    "typescript": true
+    "javascript": true,
+    "typescript": true,
+    "java": false
   },
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
@@ -185,7 +169,6 @@
   "volar.codeLens.scriptSetupTools": true,
   "volar.completion.preferredTagNameCase": "pascal",
   "windicss.enableCodeFolding": false,
-  "prettier.enable": false, // I only use Prettier for manually formatting
   "prettier.printWidth": 200,
   "prettier.semi": false,
   "prettier.singleQuote": true,
@@ -259,12 +242,10 @@
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "editor.formatOnSave": true,
   "workbench.editor.titleScrollbarSizing": "large",
-  "workbench.productIconTheme": "fluent-icons",
   // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-  "editor.lineHeight": 25,
+  "editor.lineHeight": 26,
   // Controls if file decorations should use badges.
   "explorer.decorations.badges": false,
-  "workbench.colorTheme": "Catppuccin Mocha",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -278,7 +259,7 @@
           "keyword", //import, export, return…
           "constant", //String, Number, Boolean…, this, super
           "storage.modifier", //static keyword
-          "storage.type.class.js", //class keyword
+          "storage.type.class.js" //class keyword
         ],
         "settings": {
           "fontStyle": "italic"
@@ -291,13 +272,31 @@
       }
     ]
   },
-  // Prisma configs, if you don't use prisma, you can remove this
+  /* Prisma configs, if you don't use prisma, you can remove this
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma",
     "editor.formatOnSave": true
   },
+  */
   // Catppuccin configs, if you don't use catppuccin, you can remove this (try catppuccin, it's an awesome theme)
-  "catppuccin.accentColor": "red",
+  "catppuccin.accentColor": "sapphire",
   "catppuccin.bracketMode": "rainbow",
-  "catppuccin.workbenchMode": "default"
+  "catppuccin.workbenchMode": "default",
+  "catppuccin.customUIColors": {
+    "all": {
+      "breadcrumb.foreground": "accent"
+    }
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "git.openRepositoryInParentFolders": "always",
+  "workbench.startupEditor": "none",
+  "css.lint.unknownAtRules": "ignore",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "bladeFormatter.format.sortTailwindcssClasses": true,
+  "workbench.colorTheme": "Catppuccin Macchiato"
 }
