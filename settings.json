@@ -5,16 +5,17 @@
   Major settings made with ❤️ by @gabriel
 */
 {
-  "vscode-pets.petSize": "large",
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "material-icon-theme",
+  "vscode-pets.petSize": "large", // Pets configs, use only if you have a vscode pets installed
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Catppuccin Frappé",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.iconTheme": "vscode-icons",
   // Editor
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Jetbrains Mono",
   "editor.minimap.enabled": true, // This line controls the minimap (the little map on the right side of the editor)
   "editor.fontLigatures": "true",
-  "editor.fontWeight": "600",
-  "editor.fontSize": 18,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 16.5,
   "editor.autoIndent": "full",
   "editor.cursorBlinking": "smooth", // this is great!
   "editor.smoothScrolling": true,
@@ -172,6 +173,64 @@
   "prettier.printWidth": 200,
   "prettier.semi": false,
   "prettier.singleQuote": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "workbench.editor.titleScrollbarSizing": "large",
+  // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
+  "editor.lineHeight": 29,
+  // Controls if file decorations should use badges.
+  "explorer.decorations.badges": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js" //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  // Prisma configs, if you don't use prisma, you can remove this
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  // Catppuccin configs, if you don't use catppuccin, you can remove this (try catppuccin, it's an awesome theme)
+  "catppuccin.accentColor": "sapphire",
+  "catppuccin.bracketMode": "rainbow",
+  "catppuccin.workbenchMode": "default",
+  "catppuccin.boldKeywords": true,
+  "catppuccin.customUIColors": {
+    "all": {
+      "breadcrumb.foreground": "accent"
+    }
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.openRepositoryInParentFolders": "always",
+  "editor.linkedEditing": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.colorTheme": "Nebula",
+  "material-icon-theme.folders.theme": "classic",
   // File Nesting
   // this might not be up to date with the repo, please check yourself
   // updated 2022-07-12 03:35
@@ -239,64 +298,4 @@
     "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
     "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
   },
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "editor.formatOnSave": true,
-  "workbench.editor.titleScrollbarSizing": "large",
-  // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-  "editor.lineHeight": 26,
-  // Controls if file decorations should use badges.
-  "explorer.decorations.badges": false,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          //following will be in italic (=FlottFlott)
-          "comment",
-          "entity.name.type.class", //class names
-          "keyword", //import, export, return…
-          "constant", //String, Number, Boolean…, this, super
-          "storage.modifier", //static keyword
-          "storage.type.class.js" //class keyword
-        ],
-        "settings": {
-          "fontStyle": "italic"
-        }
-      },
-      {
-        "settings": {
-          "fontStyle": ""
-        }
-      }
-    ]
-  },
-  /* Prisma configs, if you don't use prisma, you can remove this
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma",
-    "editor.formatOnSave": true
-  },
-  */
-  // Catppuccin configs, if you don't use catppuccin, you can remove this (try catppuccin, it's an awesome theme)
-  "catppuccin.accentColor": "sapphire",
-  "catppuccin.bracketMode": "rainbow",
-  "catppuccin.workbenchMode": "default",
-  "catppuccin.customUIColors": {
-    "all": {
-      "breadcrumb.foreground": "accent"
-    }
-  },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "git.openRepositoryInParentFolders": "always",
-  "workbench.startupEditor": "none",
-  "css.lint.unknownAtRules": "ignore",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "bladeFormatter.format.sortTailwindcssClasses": true,
-  "workbench.colorTheme": "Catppuccin Macchiato"
 }
